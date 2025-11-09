@@ -36,41 +36,61 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-32 bg-background">
+      <div className="container mx-auto px-4 max-w-7xl">
         {/* Section Header */}
-        <div className="text-center mb-16 space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Our <span className="gradient-text">Expertise</span>
+        <div className="text-center mb-20 space-y-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-foreground">
+            Our <span className="gradient-text">Legal Services</span>
           </h2>
-          <div className="h-1 w-24 mx-auto bg-gradient-primary rounded-full" />
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive legal solutions tailored to your unique needs
+          <div className="h-1.5 w-32 mx-auto bg-gradient-primary rounded-full" />
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Comprehensive legal expertise across five core practice areas, delivering strategic solutions with precision and professionalism
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card
               key={index}
-              className="glass border-border/50 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:glow group cursor-pointer"
+              className="bg-card border-2 border-border hover:border-primary transition-all duration-500 hover:scale-[1.03] hover:shadow-2xl group cursor-pointer overflow-hidden relative"
             >
-              <CardHeader>
-                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="h-7 w-7 text-primary-foreground" />
+              {/* Gradient Overlay on Hover */}
+              <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-500" />
+              
+              <CardHeader className="space-y-6 pb-4">
+                <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${service.color} flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg`}>
+                  <service.icon className="h-10 w-10 text-primary-foreground" strokeWidth={2.5} />
                 </div>
-                <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                <CardTitle className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <CardDescription className="text-muted-foreground leading-relaxed">
+              
+              <CardContent className="pb-8">
+                <CardDescription className="text-base text-muted-foreground leading-relaxed">
                   {service.description}
                 </CardDescription>
               </CardContent>
+
+              {/* Bottom accent line */}
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
             </Card>
           ))}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <p className="text-muted-foreground mb-6 text-lg">
+            Need legal assistance? Our team is ready to help.
+          </p>
+          <a 
+            href="#contact" 
+            className="inline-block px-8 py-4 bg-gradient-primary text-primary-foreground font-semibold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+          >
+            Schedule a Consultation
+          </a>
         </div>
       </div>
     </section>
