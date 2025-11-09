@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Sarah Johnson",
     role: "CEO, FinTech Group",
-    content: "Freddy and Partner handled our complex financial restructuring with utmost professionalism and precision. Their strategic insight saved our company.",
+    content: "Fredy and Partners handled our complex financial restructuring with utmost professionalism and precision. Their strategic insight saved our company.",
     rating: 5,
   },
   {

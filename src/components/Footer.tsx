@@ -10,7 +10,7 @@ const Footer = () => {
             {/* Brand */}
             <div className="space-y-4">
               <h3 className="text-2xl font-bold text-primary-foreground">
-                Freddy <span className="gradient-text">and Partner</span>
+                Fredy <span className="gradient-text">and Partners</span>
               </h3>
               <p className="text-primary-foreground/70 text-sm leading-relaxed">
                 Strategic Legal Solutions for a Modern World. Excellence, integrity, and innovation in every case.
@@ -70,7 +70,7 @@ const Footer = () => {
           {/* Bottom Bar */}
           <div className="pt-8 border-t border-border/30">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-              <p>© 2025 Freddy and Partner. All Rights Reserved.</p>
+              <p>© 2025 Fredy and Partners. All Rights Reserved.</p>
               <div className="flex gap-6">
                 <a href="#" className="hover:text-primary transition-colors">
                   Privacy Policy

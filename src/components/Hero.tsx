@@ -35,19 +35,19 @@ const Hero = () => {
           {/* Logo/Name */}
           <div className="space-y-2">
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground tracking-tight">
-              Freddy <span className="gradient-text">and Partner</span>
+              Fredy <span className="gradient-text">and Partners</span>
             </h1>
             <div className="h-1 w-32 mx-auto bg-gradient-primary rounded-full" />
           </div>
 
           {/* Tagline */}
           <h2 className="text-3xl md:text-4xl font-semibold text-primary-foreground/90">
-            Strategic Legal Solutions for a Modern World
+           Bisnis and Legal Partner in Indonesia
           </h2>
 
           {/* Subtext */}
           <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto leading-relaxed">
-            Freddy and Partner provides litigation, financial restructuring, and corporate legal services tailored to your needs.
+            in Consultation, in Finding something, as Note Speaker, as Lobbier, as Executive Assistant, as Executor, as Agent
           </p>
 
           {/* CTA Button */}

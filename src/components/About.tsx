@@ -8,7 +8,7 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-16 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              About <span className="gradient-text">Freddy and Partner</span>
+              About <span className="gradient-text">Fredy and Partners</span>
             </h2>
             <div className="h-1 w-24 mx-auto bg-gradient-primary rounded-full" />
           </div>
@@ -16,7 +16,7 @@ const About = () => {
           {/* Main Content */}
           <div className="glass rounded-2xl p-8 md:p-12 space-y-8">
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              Freddy and Partner is a multidisciplinary law firm committed to excellence in litigation, 
+              Fredy and Partners is a multidisciplinary law firm committed to excellence in litigation, 
               debt collection, financial restructuring, bankruptcy, and executive legal advisory. 
               We combine legal precision with strategic foresight to protect our clients' interests.
             </p>
@@ -62,7 +62,7 @@ const About = () => {
                   not just what's easy."
                 </p>
                 <footer className="text-sm text-muted-foreground">
-                  <strong className="text-primary">— Freddy</strong>, Founding Partner
+                  <strong className="text-primary">— Fredy</strong>, Founding Partner
                 </footer>
               </blockquote>
             </div>
